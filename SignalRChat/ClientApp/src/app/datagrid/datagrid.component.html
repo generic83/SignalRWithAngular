@@ -1,0 +1,18 @@
+<div ng-if="connectionStarted">
+  <dx-data-grid id="gridContainer"
+                [dataSource]="dataSource"
+                [showBorders]="true"
+                [repaintChangesOnly]="true"
+                [highlightChanges]="true">
+    <dxi-column dataField="username"
+                dataType="string"
+                [width]="115">
+    </dxi-column>
+    <dxi-column dataField="id">
+    </dxi-column>
+    <dxi-column dataField="mesage"
+                dataType="string"
+                format="#0.####">
+    </dxi-column>
+  </dx-data-grid>
+</div>
